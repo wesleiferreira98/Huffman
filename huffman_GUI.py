@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QPushButton, QTextEdit, QLabel
 from PyQt5.QtCore import Qt
-from arvore_huffman import ArvoreHuffman  # Importe a classe ArvoreHuffman
+from arvore_huffman import ArvoreHuffman  # Importa a classe ArvoreHuffman
 
 class HuffmanGUI(QMainWindow):
     def __init__(self):
@@ -58,6 +58,6 @@ class HuffmanGUI(QMainWindow):
 
     def codificar(self):
         texto_original = self.text_edit.toPlainText()
-        arvore_huffman = ArvoreHuffman(texto_original)  # Crie uma instância da classe ArvoreHuffman
-        codigo_comprimido = arvore_huffman.codificar_texto(texto_original)  # Chame o método da instância
+        arvore_huffman = ArvoreHuffman(texto_original)  # Cria a instancia da arvore de Huffman passando o texto original
+        codigo_comprimido = arvore_huffman.codificar_texto(texto_original)  # Chamada do método da instância
         self.result_text.setPlainText(codigo_comprimido)
