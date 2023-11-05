@@ -75,3 +75,4 @@ O código principal cria uma instância da aplicação PyQt, uma janela `Huffman
 ## Estilo da GUI
 
 A GUI é estilizada usando CSS embutido para definir cores de fundo, cores de texto, formato de botão e outros estilos.
+![1699210800642](image/explicacao/1699210800642.png)
